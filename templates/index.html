@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Games Shop</title>
+    </head>
+    <body>
+        <h1>Game Orders</h1>
+        {% for order in orders %}
+
+        <h2>Customer Name : {{order.customer_name}}</h2>
+        <h2>Order Date : {{order.order_date}}</h2>
+        <h2>Quantity : {{order.quantity}}</h2>
+        <h2>Title : {{order.game_title}}</h2>
+        <a href="/orders/">View Order</a>
+
+        {% endfor %}
+    </body>
+</html>
