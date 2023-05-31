@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
 <html>
     <head>
         <title>Games Shop</title>
@@ -13,5 +15,6 @@
         <a href = "orders/{{loop.index0}}">View Order</a>
 
         {% endfor %}
+
     </body>
 </html>
