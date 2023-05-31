@@ -10,7 +10,7 @@
         <h2>Order Date : {{order.order_date}}</h2>
         <h2>Quantity : {{order.quantity}}</h2>
         <h2>Title : {{order.game_title}}</h2>
-        <a href="/orders/">View Order</a>
+        <a href = "orders/{{loop.index0}}">View Order</a>
 
         {% endfor %}
     </body>
